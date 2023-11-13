@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(160, 243, 152);
+    color: rgb(6, 48, 15);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+nav ul{
+    overflow: auto;
+}
+#navbar{
+    float :left;
+    list-style: none;
+    padding: 10px;
+}
+.gameContainer{
+background-color: aliceblue;
+display:flex;
+justify-content: center;
+position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+  margin: 0px;
+  position: relative;
+}
+.box{
+    border: black solid 2px;
+}
+.box:hover{
+   
+    background-color: rgb(160, 243, 152);
+}
+
+.container .box .boxtext{
+    display: flex;
+    justify-content: center;
+   font-size: 8vw;
+   cursor: pointer;
+   align-items: center;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    font-family: 'Playfair Display', serif;
+}
+.gameinfo{
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    font-size: 30px;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.imgbox{
+display: flex;
+    justify-content: center;
+   height: 0px;
+transition: height 1s ease-in-out;
+}
+#reset{
+   margin:5px ;
+   padding: 10px; 
+   background-color:rgb(160, 243, 152);
+border-radius: 10px;
+border: 4px black solid;
+font-family: 'Playfair Display',
+    serif;
+    font-size: large;
+}
+#reset:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+    .gameContainer{
+flex-wrap: wrap;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3,30vw);
+        grid-template-columns: repeat(3,30vw);
+    }
+}
+.line{
+    background-color: black;
+    width: 0;
+    height: 3px;
+position: absolute;
+background-color: rgb(18, 153, 6);
+transition: width 1s ease-in-out;
+}
